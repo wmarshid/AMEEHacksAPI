@@ -3,7 +3,7 @@ import json
 
 def parseQuestion(question):
 
-		tree = ET.parse('question_' + question + '.xml') # e.g. question_10940477.xml
+		tree = ET.parse('Resources/question_' + question + '.xml') # e.g. question_10940477.xml
 		root = tree.getroot()
 
 		quesId = root.attrib['identifier']
